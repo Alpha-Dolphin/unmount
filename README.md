@@ -8,7 +8,7 @@ This repo is for a simple malware that I wanted to use to both test out my Raspb
 ## What does it model?
 If a malicious actor was to make use of this code, the attack would look something like the following:
 * An unsuspecting user would plug in a USB stick or other storage device into the Raspberry Pi or whatever other device.
-* The statfs loop would detect the file system and break out of the infinite loop.
+* The statfs loop would detect the file system and begin executing the malicious code.
 * The contents of the connected file system would be copied to some other location, likely a server owned by the attacking party.
 * The file system would be demounted and corrupted, rendering the data irretrievable. 
 
